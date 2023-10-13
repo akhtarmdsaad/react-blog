@@ -1,0 +1,48 @@
+
+.blog_detail
+{
+    max-width:600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+
+.blog_title
+{
+    font-size: 42px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.blog_author, .blog_posting_date
+{
+    font-size: 18px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #999;
+    align-self: start;
+}
+
+.blog_author
+{
+    margin-top: 20px;
+}
+
+.blog_posting_date
+{
+    margin-top: 10px;
+}
+
+.blog_data
+{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #eee;
+    line-height: 1.5;
+    text-align: justify;
+}

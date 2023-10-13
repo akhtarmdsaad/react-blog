@@ -1,0 +1,50 @@
+.container-home
+{
+    display: grid;
+    place-items:center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.headers
+{
+    padding: 20px;
+    border-bottom: 2px solid gray;
+    margin: 10px;
+    position: relative;
+}
+
+.view
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.btn
+{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 100px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.create_btn
+{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.search_btn
+{
+    padding: 10px;
+    font-size: 15px;
+}
