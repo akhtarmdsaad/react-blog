@@ -9,6 +9,7 @@ For Blogging Purpose
 pip install django
 pip install django-cors-headers
 pip install djangorestframework
+pip install djangorestframework-simplejwt
 cd frontend
 npm install
 ```
