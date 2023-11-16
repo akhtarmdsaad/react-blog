@@ -1,34 +1,24 @@
-import './App.css';
 import React from 'react';
-import Login from './components/login';
-import Register from './components/register';
-import Home from './components/home';
-import CreatePost from './components/create_post';
-import Blog from './components/blog_detail';
-import ChangePassword from './components/change_password';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import { Logout } from './components/logout';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Layout from './hocs/layout';
+import Home from './components/Home';
+import Blog from './components/Blog';
+import Category from './components/Category';
+import BlogDetail from './components/BlogDetail';
 
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <Router>
+      <Layout>
         <Routes>
-          <Route path='/login' element = {<Login />} />
-          <Route path='/loading' element = {<div className='loader'></div>} />
-          <Route path='/register' element = {<Register />} />
-          <Route path='/logout' element = {< Logout/>} />
-          <Route path='/home' element = {<Home />} />
-          <Route path='/create' element = {<CreatePost />} />
-          <Route path='/change_password' element = {<ChangePassword />} />
-          <Route path='/details/:id' element = {<Blog />} />
-
-          
+          <Route exact path='/' Component={Home} />
+          <Route exact path='/blog' Component={Blog} />
+          <Route exact path='/category/:category' Component={Category} />
+          <Route exact path='/blog/:slug' Component={BlogDetail} />
         </Routes>
-      </div>
-    </BrowserRouter>
-  );
+      </Layout>
+    </Router>
+  )
 }
 
 export default App;
